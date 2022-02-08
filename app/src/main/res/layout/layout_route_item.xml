@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/_8ssp"
+    android:paddingStart="@dimen/_8ssp"
+    android:paddingEnd="@dimen/_8ssp"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/layout_sub_route_item" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+        <TableRow
+            android:paddingStart="@dimen/_2ssp"
+            android:paddingTop="@dimen/_2ssp"
+            android:paddingEnd="@dimen/_2ssp">
+
+            <TextView
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingTop="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="NEXT SCHEDULED"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingTop="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="ESTIMATED PRICE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingTop="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="TRAVEL TIME"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingTop="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="DISTANCE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+        </TableRow>
+
+        <TableRow
+            android:paddingStart="@dimen/_2ssp"
+            android:paddingEnd="@dimen/_2ssp"
+            android:paddingBottom="@dimen/_2ssp">
+
+            <TextView
+                android:id="@+id/tv_schedule"
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="12:52 PM"
+                android:textColor="@color/yellow_dark"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:id="@+id/tv_fare"
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text=" 5"
+                android:textColor="@color/yellow_dark"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text="- 32 mins"
+                android:textColor="@color/yellow_dark"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:paddingStart="@dimen/_2ssp"
+                android:paddingEnd="@dimen/_2ssp"
+                android:text=" 7.51 Kms"
+                android:textColor="@color/yellow_dark"
+                android:textSize="@dimen/_8ssp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30ssp"
+        android:layout_marginBottom="88dp"
+        android:src="@drawable/ic_navigate_next"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_5ssp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2ssp"
+        android:background="@color/background_color"
+        android:layout_marginTop="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

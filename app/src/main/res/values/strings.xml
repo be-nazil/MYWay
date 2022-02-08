@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MYWay</string>
+
+    <string name="google_map_api_key">AIzaSyAO6uAAiBFRDjPLQoEp0VdY2GQGpk0f_Go</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tag_source">Source</string>
+    <string name="tag_destination">Destination</string>
+</resources>
